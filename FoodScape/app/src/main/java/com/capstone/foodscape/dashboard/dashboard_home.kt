@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.capstone.foodscape.adapter.adapter_streetfood
+import com.capstone.foodscape.adapter.adaptermakanan
+import com.capstone.foodscape.databinding.ActivityDashboardHomeBinding
 import com.example.wisatadanberita.databinding.ActivityDashboardHomeBinding
 import com.example.wisatadanberita.datas.DataItem
 import com.example.wisatadanberita.datas.ResponseBerita
@@ -20,8 +23,8 @@ import retrofit2.Response
 class dashboard_home : Fragment() {
 
     private var data: List<DataItem> = mutableListOf()
-    private var adapter: adapter_berita? = null
-    private var adapterw: adapterwisata? = null
+    private var adapter: adapter_streetfood? = null
+    private var adapterw: adaptermakanan? = null
     private lateinit var bind: ActivityDashboardHomeBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,7 +63,7 @@ class dashboard_home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = adapter_berita(data)
+        adapter = adapter_streetfood(data)
 
         bind.rcBerita.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -83,7 +86,7 @@ class dashboard_home : Fragment() {
                     if (response.isSuccessful) {
                         data = response.body()?.data!!
 
-                        adapter = adapter_berita(data)
+                        adapter = adapter_streetfood(data)
                         val linearLayoutManager =
                             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
                         bind.rcBerita.setLayoutManager(linearLayoutManager)
@@ -109,7 +112,7 @@ class dashboard_home : Fragment() {
                     if (response.isSuccessful) {
                         data = response.body()?.data!!
 
-                        adapterw = adapterwisata(data)
+                        adapterw = adaptermakanan(data)
                         val linearLayoutManager =
                             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                         bind.rcwisata.setLayoutManager(linearLayoutManager)
