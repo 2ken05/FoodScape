@@ -11,10 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.foodscape.adapter.adapter_streetfood
 import com.capstone.foodscape.adapter.adaptermakanan
 import com.capstone.foodscape.databinding.ActivityDashboardHomeBinding
-import com.example.wisatadanberita.databinding.ActivityDashboardHomeBinding
-import com.example.wisatadanberita.datas.DataItem
-import com.example.wisatadanberita.datas.ResponseBerita
-import com.example.wisatadanberita.network.api
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
