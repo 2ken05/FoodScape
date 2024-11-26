@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginTop="-10dp"
-        android:backgroundTint="#0937D8"
+        android:backgroundTint="#A6D785"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
