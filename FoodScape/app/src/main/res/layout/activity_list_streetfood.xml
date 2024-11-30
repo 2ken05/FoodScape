@@ -87,15 +87,6 @@
                 app:layout_constraintStart_toStartOf="parent">
 
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/pss"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="#fff"
-                    android:shadowRadius="10"
-                    android:drawableEnd="@drawable/ic_search_icon"
-                    android:fontFamily="@font/montaga"
-                    android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
