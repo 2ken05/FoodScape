@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Dasar Aplikasi -->
+    <style name="Base.Theme.FoodEscape" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Properti tambahan untuk tema dasar -->
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="colorPrimaryVariant">@color/dark_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Tema Utama Aplikasi -->
+    <style name="Theme.FoodEscape" parent="Base.Theme.FoodEscape" />
+
+    <!-- Tema untuk SplashActivity -->
+    <style name="Theme.FoodEscape.Splash" parent="Theme.FoodEscape">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context="com.capstone.foodescape.PertanyaanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header: FoodScape Title -->
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FoodScape"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_green"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Pertanyaan 1 -->
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan 1: Apa kategori tempat yang Anda sukai?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTempat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/restoran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restoran"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/bars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bars"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/bakeryShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bakery Shop"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/coffeeTeaShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee/Tea Shop"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/dessertShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dessert Shop"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <!-- Pertanyaan 2 -->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan 2: Apa kategori makanan yang Anda sukai?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/asian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asian"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/bakso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakso"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/dimSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dim Sum"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/fusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fusion"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/iceCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice Cream"
+            android:textColor="@color/black"/>
+
+        <!-- Pertanyaan 4 -->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan 4: Seberapa penting skor review untuk Anda?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/sangatPenting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Penting (4.5)"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/cukupPenting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukup Penting (4.0)"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/tidakTerlaluPenting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Terlalu Penting (3.5)"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/tidakAdaPreferensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada Preferensi (0)"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <!-- Button Submit -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirim"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/light_green"
+            android:layout_marginTop="16dp"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

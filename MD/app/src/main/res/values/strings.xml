@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FoodScape</string>
+    <string name="food_category">Food Category</string>
+    <string name="nama_aplikasi">FoodScape</string>
+    <string name="search">Search</string>
+    <string name="kuliner_lokal">Kuliner Lokal</string>
+    <string name="street_food">Street Food</string>
+    <string name="rekomendasi_kuliner">Rekomendasi Kuliner</string>
+    <string name="nama_makanan">nama makanan</string>
+    <string name="lokasi_tempatmakan">Lokasi tempat makan</string>
+    <string name="rekomendasi_tempat_makan">Rekomendasi Tempat Makan</string>
+    <string name="deskripsi_singkat">deskripsi_singkat</string>
+    <string name="makanan_populer">Makanan Populer</string>
+    <string name="deskripsi_detail">Deskripsi Detail</string>
+    <string name="harga">Harga</string>
+    <string name="deskripsi_judul">Deskripsi</string>
+    <string name="buka">Jam Buka</string>
+    <string name="nama_streetfood">nama streetfood</string>
+    <string name="harga_makanan">Harga Makanan</string>
+    <string name="semarang">Semarang</string>
+    <string name="category_image">Gambar kategori</string>
+
+
+</resources>

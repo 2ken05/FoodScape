@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Gambar Kategori -->
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/streetfood"
+        android:contentDescription="@string/category_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Nama Kategori -->
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:text="Nama Tempat"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/montaga"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/categoryImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Rating dan Bintang -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/categoryName"
+            app:layout_constraintStart_toStartOf="@id/categoryName"
+            app:layout_constraintEnd_toEndOf="@id/categoryName">
+
+            <!-- Kata Rating -->
+            <TextView
+                android:id="@+id/categoryRatingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/montaga"
+                android:layout_marginEnd="4dp" />
+
+            <!-- Ikon Bintang -->
+            <ImageView
+                android:id="@+id/categoryRatingStar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:contentDescription="Rating Star" />
+
+            <!-- Review -->
+            <TextView
+                android:id="@+id/categoryReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5 / 5"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
